@@ -10,7 +10,7 @@ If fso.FileExists(flagFile) Then
     ws.Popup "Docsify stopped.", 1, "Success", 64
 Else
     ws.Run "taskkill /f /im node.exe >nul 2>&1", 0, True
-    ws.Run "cmd /c cd /d ""E:\github\danielmiau.github.io\docs"" && docsify serve", 0
+    ws.Run "cmd /c cd /d ""E:\github\danielmiau.github.io"" && docsify serve", 0
     fso.CreateTextFile flagFile, True
     WScript.Sleep 1000
     ws.Run "http://localhost:3000"
