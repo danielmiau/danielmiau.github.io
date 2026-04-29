@@ -54,7 +54,7 @@
   - [11-Redis核心源码浅析](docs/redis/11-Redis核心源码浅析.md)
   - [12-Redis6.0+新特性](docs/redis/12-Redis6.0+新特性.md)
   - [13-常见使用场景](docs/redis/13-Redis常见使用场景.md)
-  - [14-Redis常见面试题及场景题.md](docs/redis/14-Redis常见面试题及场景题.md)
+  - [14-Redis常见面试题及场景题](docs/redis/14-Redis常见面试题及场景题.md)
 
 - 消息队列 MQ
   - [使用场景](docs/MQ/场景.md)
