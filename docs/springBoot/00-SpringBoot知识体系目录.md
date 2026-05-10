@@ -5,16 +5,16 @@
 ---
 
 ## 目录总览
-| 模块        | 文件                                     | 备注                                                         |
-| :---------- | :--------------------------------------- | :----------------------------------------------------------- |
-| Spring Boot | 01-SpringBoot概述与整体架构              | Spring Boot定义、设计理念、整体架构、与Spring/Spring MVC关系、版本演进 |
-| Spring Boot | 02-自动配置（AutoConfiguration）核心原理 | 约定大于配置思想、`@SpringBootApplication`拆解、自动配置流程、`spring.factories`与条件注解 |
-| Spring Boot | 03-配置体系与环境适配                    | 配置文件优先级、多环境配置、`@Value`与`@ConfigurationProperties`、外部配置与敏感信息处理 |
-| Spring Boot | 04-Web开发与MVC增强                      | MVC自动配置、请求处理、参数绑定、全局异常处理、拦截器/跨域配置、RESTful接口规范 |
-| Spring Boot | 05-数据访问与事务管理                    | 数据源自动配置、MyBatis集成、事务管理与失效场景修复、多数据源配置、连接池优化 |
-| Spring Boot | 06-监控日志与运维部署                    | Actuator监控端点、日志体系配置、健康检查、打包部署、Docker容器化、优雅停机 |
-| Spring Boot | 07-常用中间件集成实战                    | Redis、消息队列、定时任务、文件上传、第三方服务调用、异步线程池配置 |
-| Spring Boot | 08-高频面试题&易错点总结                 | 配置坑点、事务失效、并发场景问题、版本兼容问题、面试八股与场景题 |
+| 模块        | 文件                                                         | 备注                                                         |
+| :---------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
+| Spring Boot | [01-SpringBoot概述与整体架构](docs/springBoot/01-SpringBoot概述与整体架构.md) | Spring Boot定义、设计理念、整体架构、与Spring/Spring MVC关系、版本演进 |
+| Spring Boot | [02-自动配置（AutoConfiguration）核心原理](docs/springBoot/02-自动配置（AutoConfiguration）核心原理.md) | 约定大于配置思想、`@SpringBootApplication`拆解、自动配置流程、`spring.factories`与条件注解 |
+| Spring Boot | [03-配置体系与环境适配](docs/springBoot/03-配置文件与环境适配.md) | 配置文件优先级、多环境配置、`@Value`与`@ConfigurationProperties`、外部配置与敏感信息处理 |
+| Spring Boot | [04-Web开发与MVC增强](docs/springBoot/04-Web开发与MVC增强.md) | MVC自动配置、请求处理、参数绑定、全局异常处理、拦截器/跨域配置、RESTful接口规范 |
+| Spring Boot | [05-数据访问与事务管理](docs/springBoot/05-数据访问与事务管理.md) | 数据源自动配置、MyBatis集成、事务管理与失效场景修复、多数据源配置、连接池优化 |
+| Spring Boot | [06-监控日志与运维部署](docs/springBoot/06-监控日志与运维部署.md) | Actuator监控端点、日志体系配置、健康检查、打包部署、Docker容器化、优雅停机 |
+| Spring Boot | [07-常用中间件集成实战](docs/springBoot/07-常用中间件集成实战.md) | Redis、消息队列、定时任务、文件上传、第三方服务调用、异步线程池配置 |
+| Spring Boot | [08-高频面试题&易错点总结](docs/springBoot/08-高频面试题与易错点总结.md) | 配置坑点、事务失效、并发场景问题、版本兼容问题、面试八股与场景题 |
 
 ---
 

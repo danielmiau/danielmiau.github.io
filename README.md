@@ -8,7 +8,7 @@
 
 1. [JVM](docs/jvm/00-JVM知识体系目录总览.md)
 2. [Spring](docs/spring/00-Spring知识体系目录.md)
-2. Spring Boot
+2. [Spring Boot](docs/springBoot/00-SpringBoot知识体系目录.md)
 2. Spring Cloud
 3. 多线程 & 锁
 4. 高并发编程
