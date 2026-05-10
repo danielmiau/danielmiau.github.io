@@ -1,6 +1,6 @@
-- 首页
+- [**首页**](README.md)
 
-- JVM
+- [**JVM**](docs/jvm/00-JVM知识体系目录总览.md)
   - [00-目录总览](docs/jvm/00-JVM知识体系目录总览.md)
   - [01-JVM基础认知&整体架构](docs/jvm/01-JVM基础认知及整体架构.md)
   - [02-运行时数据区&内存模型](docs/jvm/02-运行时数据区及内存模型.md)
@@ -14,22 +14,38 @@
   - [10-线上故障排查实战](docs/jvm/10-线上故障排查实战.md)
   - [11-面试高频场景题](docs/jvm/11-面试高频场景题.md)
 
-- Spring
-  - [IOC](docs/Spring/IOC.md)
-  - [AOP](docs/Spring/AOP.md)
-  - [SpringBoot自动配置](docs/Spring/自动配置.md)
+- [**Spring**](docs/spring/00-Spring知识体系目录.md)
+  - [00-目录总览](docs/spring/00-Spring知识体系目录.md)
+  - [01-Spring概述与整体架构](docs/spring/01-Spring概述与整体架构.md)
+  - [02-IOC容器（控制反转）核心原理](docs/spring/02-IOC容器（控制反转）核心原理.md)
+  - [03-Bean生命周期与扩展点](docs/spring/03-Bean生命周期与扩展点.md)
+  - [04-依赖注入（DI）详解](docs/spring/04-依赖注入（DI）详解.md)
+  - [05-AOP（面向切面编程）核心原理](docs/spring/05-AOP（面向切面编程）核心原理.md)
+  - [06-Spring 事务管理机制](docs/spring/06-Spring事务管理机制.md)
+  - [07-Spring 资源加载与国际化](docs/spring/07-Spring资源加载与国际化.md)
+  - [08-高频面试题&易错点总结](docs/spring/08-高频面试题与易错点总结.md)
+
+- [**Spring Boot**](docs/springBoot/00-SpringBoot知识体系目录.md)
+- [00-目录总览](docs/springBoot/00-SpringBoot知识体系目录.md)
+- [01-SpringBoot 概述与整体架构](docs/springBoot/01-SpringBoot概述与整体架构.md)
+- [02-自动配置（AutoConfiguration）核心原理](docs/springBoot/02-自动配置（AutoConfiguration）核心原理.md)
+- [03-配置文件与环境适配](docs/springBoot/03-配置文件与环境适配.md)
+- [04-Web开发与MVC增强](docs/springBoot/04-Web开发与MVC增强.md)
+- [05-数据访问与事务管理](docs/springBoot/05-数据访问与事务管理.md)
+- [06-监控日志与运维部署](docs/springBoot/06-监控日志与运维部署.md)
+- [07-常用中间件集成实战](docs/springBoot/07-常用中间件集成实战.md)
+- [08-高频面试题 & 易错点总结](docs/springBoot/08-高频面试题与易错点总结.md)
+
+- Spring Cloud
+
 
 - 多线程 & 锁
-  - [线程基础](docs/多线程/线程基础.md)
-  - [Synchronized](docs/多线程/Synchronized.md)
-  - [ReentrantLock](docs/多线程/ReentrantLock.md)
+
 
 - 高并发编程
-  - [高并发编程](docs/多线程/线程基础.md)
-  - [高并发编程](docs/多线程/Synchronized.md)
-  - [高并发编程](docs/多线程/ReentrantLock.md)
 
-- MySQL
+
+- [**MySQL**](docs/mysql/00-MySQL知识体系目录总览.md)
   - [00-目录总览](docs/mysql/00-MySQL知识体系目录总览.md)
   - [01-MySQL基础入门](docs/mysql/01-MySQL基础入门.md)
   - [02-索引原理与优化](docs/mysql/02-索引原理与优化.md)
@@ -39,7 +55,7 @@
   - [06-性能优化实战](docs/mysql/06-性能优化实战.md)
   - [07-高频面试题与场景题](docs/mysql/07-高频面试题与场景题.md)
 
-- Redis
+- [**Redis**](docs/redis/00-Redis知识体系目录总览.md)
   - [00-目录总览](docs/redis/00-Redis知识体系目录总览.md)
   - [01-Redis基础入门](docs/redis/01-Redis基础入门.md)
   - [02-五大基础数据结构&底层原理](docs/redis/02-Redis五大基础数据结构&底层原理.md)
@@ -57,10 +73,9 @@
   - [14-Redis常见面试题及场景题](docs/redis/14-Redis常见面试题及场景题.md)
 
 - 消息队列 MQ
-  - [使用场景](docs/MQ/场景.md)
-  - [消息可靠性](docs/MQ/可靠性.md)
 
-- K8s
+
+- [**K8s**](docs/k8s/00-Kubernetes知识体系目录总览.md)
   - [00-目录总览](docs/k8s/00-Kubernetes知识体系目录总览.md)
   - [01-容器前置基础](docs/k8s/01-容器前置基础.md)
   - [02-K8s整体架构&核心原理](docs/k8s/02-K8s整体架构与核心原理.md)
@@ -73,10 +88,9 @@
   - [09-轻量化优化&生产实践](docs/k8s/09-轻量化优化与生产实践.md)
 
 - 设计模式
-  - [单例模式](docs/设计模式/单例模式.md)
-  - [工厂模式](docs/设计模式/工厂模式.md)
 
-- 算法
+
+- [**算法**](docs/algorithm/00-算法知识库.md)
   - [00-算法知识库](docs/algorithm/00-算法知识库.md)
   - [01-数组与前缀和](docs/algorithm/01-数组与前缀和.md)
   - [02-哈希表](docs/algorithm/02-哈希表.md)

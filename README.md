@@ -7,7 +7,9 @@
 ## 学习路线
 
 1. [JVM](docs/jvm/00-JVM知识体系目录总览.md)
-2. Spring
+2. [Spring](docs/spring/00-Spring知识体系目录.md)
+2. Spring Boot
+2. Spring Cloud
 3. 多线程 & 锁
 4. 高并发编程
 5. [MySQL](docs/mysql/00-MySQL知识体系目录总览.md)
@@ -23,3 +25,5 @@
 
 本博客用于个人复习、面试准备、知识沉淀。
 内容全部由自己整理，持续更新～
+职业规划、建议意见等技术沟通需求请使用以下邮箱与本人联系，希望和大家共同成长：
+daniel_miau@foxmail.com
