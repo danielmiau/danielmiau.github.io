@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>Java知识体系</title>
+  <title>Java知识星球</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
 </head>
@@ -11,7 +11,7 @@
 
   <script>
     window.$docsify = {
-      name: 'Java知识体系',
+      name: 'Java知识星球',
       repo: 'https://github.com/danielmiau/danielmiau.github.io',
       loadSidebar: true,
       subMaxLevel: 3,
@@ -21,6 +21,120 @@
         noData: "未找到结果",
         depth: 3,
       }
+    }
+  </script>
+  <style>
+    /* 子菜单默认隐藏 */
+    .sidebar-nav li ul {
+      display: none;
+      margin-left: 16px;
+    }
+
+    /* 1. 只有「有子菜单的父项」才加箭头 */
+    .sidebar-nav li.has-submenu {
+      position: relative;
+      cursor: pointer;
+      padding-left: 20px;
+    }
+    .sidebar-nav li.has-submenu::before {
+      content: "●";
+      position: absolute;
+      left: 0;
+      top: 2px;
+      font-size: 10px;
+      transition: transform 0.2s;
+    }
+
+    /* 2. 没有子菜单的普通链接，保持原样 */
+    .sidebar-nav li:not(.has-submenu) {
+      padding-left: 0;
+    }
+    .sidebar-nav li:not(.has-submenu)::before {
+      display: none;
+    }
+
+    /* 3. 展开时箭头旋转，子菜单显示 */
+    .sidebar-nav li.has-submenu.open::before {
+      transform: rotate(90deg);
+    }
+    .sidebar-nav li.has-submenu.open > ul {
+      display: block;
+    }
+  </style>
+
+  <script>
+    // Docsify 菜单展开收起插件（最终稳定版 · 适配你的圆点）
+    window.$docsify.plugins = [
+      function (hook, vm) {
+        hook.doneEach(function () {
+          const state = getMenuState();
+          const sidebarItems = document.querySelectorAll('.sidebar-nav li');
+
+          sidebarItems.forEach((li) => {
+            const submenu = li.querySelector('ul');
+            if (!submenu) return;
+
+            // 防止重复绑定
+            if (li.classList.contains('menu-ready')) return;
+            li.classList.add('menu-ready');
+            li.classList.add('has-submenu');
+
+            // 稳定唯一ID：用链接href生成，绝对不冲突
+            const link = li.querySelector('a');
+            const menuId = link ? link.href : li.textContent.trim();
+
+            // 自动展开：当前页面在菜单内 = 强制展开
+            const hasActive = li.querySelector('.active');
+            const shouldOpen = state[menuId] || hasActive;
+            
+            if (shouldOpen) {
+              li.classList.add('open');
+              state[menuId] = true;
+            } else {
+              li.classList.remove('open');
+            }
+
+            // ==========================================
+            // 核心修复：点击圆点/空白 → 只切换自己，不冒泡、不影响父菜单
+            // ==========================================
+            li.addEventListener('click', function (e) {
+              // 只在点击 非链接区域（圆点/空白）时执行
+              if (e.target.tagName === 'A') return;
+
+              // 阻止冒泡 → 点击子菜单不会关掉父菜单！！！
+              e.stopPropagation();
+
+              // 只切换自己
+              this.classList.toggle('open');
+              state[menuId] = this.classList.contains('open');
+              saveMenuState(state);
+            });
+
+            // 点击子链接 → 保持展开
+            const allLinks = li.querySelectorAll('a');
+            allLinks.forEach(link => {
+              link.addEventListener('click', () => {
+                li.classList.add('open');
+                state[menuId] = true;
+                saveMenuState(state);
+              });
+            });
+          });
+          saveMenuState(state);
+        });
+      }
+    ];
+
+    // 存储工具
+    function getMenuState() {
+      try {
+        return JSON.parse(localStorage.getItem('docsifyMenuState')) || {};
+      } catch (e) {
+        return {};
+      }
+    }
+    function saveMenuState(state) {
+      localStorage.setItem('docsifyMenuState', JSON.stringify(state));
     }
   </script>
 
