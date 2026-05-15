@@ -142,7 +142,22 @@
     - [14-Redis常见面试题及场景题](docs/redis/14-Redis常见面试题及场景题.md)
 
   - 消息队列 MQ
+    - [00-目录总览](docs/mq/00-消息队列（MQ）知识体系目录总览.md)
+    - [01-消息队列核心基础与选型](docs/mq/01-消息队列核心基础与选型.md)
+    - [02-RabbitMQ 深度解析与实战](docs/mq/02-RabbitMQ深度解析与实战.md)
+    - [03-Kafka 深度解析与实战](docs/mq/03-Kafka深度解析与实战.md)
+    - [04-RocketMQ 深度解析与实战](docs/mq/04-RocketMQ深度解析与实战.md)
+    - [05-消息队列高并发架构与最佳实践](docs/mq/05-消息队列高并发架构与最佳实践.md)
+    - [06-MQ 高频面试题与场景题](docs/mq/06-MQ高频面试题与场景题.md)
+
   - ES
+    - [00-目录总览](docs/es/00-ElasticSearch知识体系目录总览.md)
+    - [01-ES 核心基础与环境搭建](docs/es/01-ES核心基础与环境搭建.md)
+    - [02-ES 核心数据结构与索引原理](docs/es/02-ES核心数据结构与索引原理.md)
+    - [03-ES DSL 查询语法大全](docs/es/03-ESDSL查询语法大全.md)
+    - [04-ES 聚合分析与排序分页](docs/es/04-ES聚合分析与排序分页.md)
+    - [05-ES 集群架构、分片副本与高可用](docs/es/05-ES集群架构、分片副本与高可用.md)
+    - [06-ES 生产调优、问题排查与高频面试题](docs/es/06-ES生产调优、问题排查与高频面试题.md)
 
 - **运维部署**
   - [**K8s**](docs/k8s/00-Kubernetes知识体系目录总览.md)
